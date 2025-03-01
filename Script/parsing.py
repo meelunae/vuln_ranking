@@ -86,9 +86,6 @@ def query_exploitdb_for_exploits(cve):
         print(f"Error in query_exploitdb_for_exploits: {e}")
         return False  # Assume not exploitable if an error occurs
 
-def query_kev_by_cve(cve):
-
-
 """
 Parses the XML produced as output of a nmap scan
 launched with the following command: nmap -sV -p [PORTS] --script vulners [HOST] -oX [OUTPUT_FILE]
